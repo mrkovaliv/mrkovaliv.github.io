@@ -1,0 +1,29 @@
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #F5F5F5;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    max-width: 1395px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-inner{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+}
