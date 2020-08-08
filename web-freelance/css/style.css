@@ -8,10 +8,17 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 27px;
     line-height: 34px;
+    background-color: #040010;
     font-weight: 400;
-    color: #F5F5F5;
+    color: #fff;
     min-width: 320px;
     overflow-x: hidden;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
@@ -21,9 +28,133 @@ a{
     padding: 0 15px;
     margin: 0 auto;
 }
-.header-inner{
+.header__inner{
     min-height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+}
+.header__contact{
+    max-width: 595px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-list__item + .menu-list__item{
+    margin-left: 30px;
+}
+.menu-list__item a{
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s;
+}
+.menu-list__item a:hover{
+    color: #F22F54;
+    border-bottom: 1px dashed #FFF;
+}
+.menu-list__item--active a{
+    color: #F22F54;
+    border-bottom: 1px dashed #FFF;
+
+}
+.header__btn button{
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s;
+}
+.header__btn button:hover{
+    background-color: #F22F54;
+
+}
+.header__btn button{
+    padding: 15px 25px;
+    border: 2px solid #F22F54;
+    border-radius: 25px;
+}
+.header__btn{
+    margin-left: 50px;
+}
+.top{
+    background-image: url(../images/Group\ 2700.png);
+    background-repeat: no-repeat;
+    background-position: top center;
     
+}
+.top__inner{
+
+    text-align: center;
+    padding: 50px 0 100px 0;
+    
+}
+.top__title{
+    font-weight: 400;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 54px;
+    line-height: 70px;
+    margin-bottom: 25px;
+}
+.top__title span,
+.top__text span{
+    font-weight: bold;
+    color: #F22F54;
+}
+.top__text{
+    max-width: 785px;
+    margin: 0 auto;
+}
+.description__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.description__info{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    max-width: 636px;
+}
+.description__suptitle{
+    font-size: 26px;
+    line-height: 34px;
+    color: #F22F54;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.description__title{
+    font-size: 46px;
+    line-height: 70px;
+    margin-top: -15px;
+    margin-bottom: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+.description__text span{
+    color: #F22F54;
+}
+.description__text-bold{
+    font-weight: bold;
+}
+.description__text span.description__text-bg{
+    color: #fff;
+    background-color: #3E0C24;
+    border-radius: 5px;
+}
+.description__text-sup{
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #A8A7AC;
+}
+.description__text-sup span{
+    color: #F22F54;
+}
+.description__img{
+    padding-top: 10px;
 }
