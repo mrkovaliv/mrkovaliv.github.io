@@ -8,7 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand:wght@400;700&family=Roboto:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header wow fadeInDown" data-wow-delay="0.3s">
     <div class="container">
       <div class="header__inner">
         <div class="header__logo">
@@ -37,45 +37,175 @@
           </nav>
           <div class="header__btn"><button>CONNECT</button></div>
         </div>
+        <div class="header__burg header__burg--active">
+          <div class="header__burg-item"></div>
+          <div class="header__burg-smallitem"></div>
+          <div class="header__burg-item"></div>
+        </div>
+        <div class="header__close"></div>
+
       </div>
     </div>
   </header>
-  <section class="top">
-    <div class="container">
-      <div class="top__inner">
-        <div class="top__logo"><img src="images/Group 6650.png" alt=""></div>
-        <div class="top__title">Start <span>Winning Today</span> With <span>DEFIPIE</span> Staking</div>
-        <div class="top__text">
-          <p class="top__text-item">Defipie Staking is a flexible staking contract for ERC-20 tokens.</p>
-          <p class="top__text-item">Simple, Secure and Dynamic.</p>
-          <p class="top__text-item"><span>In Partnership With:</span></p>
-        </div>
-        <div class="top__brend"><img src="images/FerrumNetworkLogoFull.png" alt=""></div>
-      </div>
-    </div>
-  </section>
-  <section class="description">
-    <div class="container">
-      <div class="description__inner">
-        <div class="description__info">
-          <div class="description__suptitle">REWARDS</div>
-          <div class="description__title">WHAT IS STAKING?</div>
-          <div class="description__text">
-            <p> <span class="description__text-bold">Staking</span> is the process of holding tokens in a cryptocurrency wallet to support the operations of a
-              network. <span>Participants are rewarded</span> for depositing and holding coins, with constant guaranteed time-based
-              returns. Rewards are calculated based on staking time: <br>
-              <span class="description__text-bg"> the longer you stake, the more you earn. </span></p>
-            <p class="description__text-sup">*Check out <span>this article</span> to learn how you can earn MORE by staking longer than others</p>
+  <div class="group-first">
+    <section class="top">
+      <div class="container">
+        <div class="top__inner">
+          <div class="top__logo wow fadeInUp" data-wow-delay="0.2s"><img src="images/Group 6650.png" alt=""></div>
+          <div class="top__title wow fadeInUp" data-wow-delay="0.3s">Start <span>Winning Today</span> With
+            <span>DEFIPIE</span> Staking</div>
+          <div class="top__text wow fadeInUp" data-wow-delay="0.4s">
+            <p class="top__text-item">Defipie Staking is a flexible staking contract for ERC-20 tokens.</p>
+            <p class="top__text-item">Simple, Secure and Dynamic.</p>
+            <p class="top__text-item"><span>In Partnership With:</span></p>
+          </div>
+          <div class="top__brend wow fadeInUp" data-wow-delay="0.5s"><img src="images/FerrumNetworkLogoFull.png" alt="">
           </div>
         </div>
-        <div class="description__img">
-          <img src="images/Group 6551.png" alt="">
+      </div>
+    </section>
+    <section class="description">
+      <div class="container">
+        <div class="description__inner">
+          <div class="description__info  wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="300">
+            <div class="description__suptitle">REWARDS</div>
+            <div class="description__title">WHAT IS STAKING?</div>
+            <div class="description__text">
+              <p> <span class="description__text-bold">Staking</span> is the process of holding tokens in a
+                cryptocurrency
+                wallet to support the operations of a
+                network. <span>Participants are rewarded</span> for depositing and holding coins, with constant
+                guaranteed
+                time-based
+                returns. Rewards are calculated based on staking time: <br>
+                <span class="description__text-bg"> the longer you stake, the more you earn. </span></p>
+              <p class="description__text-sup">*Check out <span>this article</span> to learn how you can earn MORE by
+                staking longer than others</p>
+            </div>
+          </div>
+          <div class="description__img  wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="300">
+            <img src="images/Group 6551.png" alt="">
+          </div>
         </div>
+      </div>
+    </section>
+  </div>
+  <section class="boxes">
+    <div class="container">
+      <div class="boxes__inner">
+        <div class="boxes__inner-item  wow fadeInLeft" data-wow-delay="0.2s" data-wow-offset="300">
+          <div class="boxes__title-bg">DIAMOND STAKING</div>
+          <div class="boxes__title-box">
+            <div class="boxes__title"> <span>DIAMOND</span> STAKING</div>
+            <div class="boxes__title-block">
+              <div class="boxes__title-percent">50%</div>
+              <div class="boxes__title-text">And more Annualised</div>
+            </div>
+            <div class="boxes__title-block">
+              <div class="boxes__title-percent">12%</div>
+              <div class="boxes__title-text">Early Withdraw</div>
+            </div>
+          </div>
+          <div class="boxes__inner-supprice">POOL SIZE</div>
+          <div class="boxes__inner-price">1,000,000 <span>PIE</span></div>
+          <div class="boxes__inner-line wow zoomIn" data-wow-delay="0.8s"><img src="images/Group 6555.png" alt=""></div>
+        </div>
+        <div class="boxes__inner-item  wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="200">
+          <div class="boxes__title-bg">CHEESCAKE STAKING</div>
+          <div class="boxes__title-box">
+            <div class="boxes__title"> <span>CAKE</span> STAKING</div>
+            <div class="boxes__title-block">
+              <div class="boxes__title-percent">50%</div>
+              <div class="boxes__title-text">And more Annualised</div>
+            </div>
+            <div class="boxes__title-block">
+              <div class="boxes__title-percent">12%</div>
+              <div class="boxes__title-text">Early Withdraw</div>
+            </div>
+          </div>
+          <div class="boxes__inner-supprice">POOL SIZE</div>
+          <div class="boxes__inner-price">5,000,000 <span>PIE</span></div>
+          <div class="boxes__inner-line wow zoomIn" data-wow-delay="0.8s"><img src="images/Group655.png" alt=""></div>
+        </div>
+        <div class="boxes__inner-item wow fadeInLeft" data-wow-delay="0.4s" data-wow-offset="200">
+          <div class="boxes__title-bg">DIAMOND STAKING</div>
+          <div class="boxes__title-box">
+            <div class="boxes__title"> <span>DIAMOND</span> STAKING</div>
+            <div class="boxes__title-block">
+              <div class="boxes__title-percent">50%</div>
+              <div class="boxes__title-text">And more Annualised</div>
+            </div>
+            <div class="boxes__title-block">
+              <div class="boxes__title-percent">12%</div>
+              <div class="boxes__title-text">Early Withdraw</div>
+            </div>
+          </div>
 
+          <div class="boxes__inner-supprice">POOL SIZE</div>
+          <div class="boxes__inner-filled">
+            <div class="boxes__inner-price">1,000,000 <span>PIE</span></div>
+            <div class="boxes__inner-img"><img src="images/Group 6621.png" alt=""></div>
+          </div>
+          <div class="boxes__inner-line wow zoomIn" data-wow-delay="0.8s"><img src="images/Group65.png" alt=""></div>
+        </div>
       </div>
     </div>
-
   </section>
+
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits__inner">
+        <div class="benefits__title-bg wow fadeInUp" data-wow-offset="100">STAKING</div>
+        <div class="benefits__title wow fadeInUp" data-wow-offset="100"><span>DEFIPIE STACKING</span> <br> WHY CHOOSE
+          US?</div>
+        <div class="benefits__items">
+          <div class="benefits__item wow fadeInUp" data-wow-delay="0.1s" data-wow-offset="200">
+            <div class="benefits__item-img"><img src="images/touch.png" alt=""></div>
+            <div class="benefits__item-title">SIMPLE AND EASY TO USE</div>
+            <div class="benefits__item-text">For beginners and professionals, very simple to use.</div>
+          </div>
+          <div class="benefits__item wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="200">
+            <div class="benefits__item-img"><img src="images/Safe.png" alt=""></div>
+            <div class="benefits__item-title">SECURITY</div>
+            <div class="benefits__item-text">Your assets are stored securely on the blockchain.</div>
+          </div>
+          <div class="benefits__item wow fadeInUp" data-wow-delay="0.3s" data-wow-offset="200">
+            <div class="benefits__item-img"><img src="images/08-fast support.png" alt=""></div>
+            <div class="benefits__item-title">FAST SUPPORT</div>
+            <div class="benefits__item-text">Always ready to help you with any questions 24/7.</div>
+          </div>
+          <div class="benefits__item wow fadeInUp" data-wow-delay="0.1s" data-wow-offset="200">
+            <div class="benefits__item-img"><img src="images/print.png" alt=""></div>
+            <div class="benefits__item-title">TRANSPARENCY</div>
+            <div class="benefits__item-text">We share information on staking addresses.</div>
+          </div>
+          <div class="benefits__item wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="200">
+            <div class="benefits__item-img"><img src="images/gift.png" alt=""></div>
+            <div class="benefits__item-title">TOP REWARD</div>
+            <div class="benefits__item-text">Among the best rewards in the industry.</div>
+          </div>
+          <div class="benefits__item wow fadeInUp" data-wow-delay="0.3s" data-wow-offset="200">
+            <div class="benefits__item-img"><img src="images/referral.png" alt=""></div>
+            <div class="benefits__item-title">REFERRAL REWARDS</div>
+            <div class="benefits__item-text">Refer staking to earn more (coming soon).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__suptitle wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="100">TIME TO</div>
+      <div class="footer__title wow fadeInUp" data-wow-delay="0.3s" data-wow-offset="100">Become an
+        <span>Investor</span></div>
+      <div class="footer__text wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="100">Contact us on our Telegram
+        Channel for any questions or problems with staking process.
+      </div>
+      <div class="footer__btn wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="100"><button> CONNECT</button></div>
+      <div class="footer__copy">Copyright © 2019 Ironworks BVI Ltd. / All rights reserved / Terms of Use / Privacy
+        Policy</div>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>

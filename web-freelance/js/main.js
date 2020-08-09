@@ -1,36 +1,16 @@
 $(function(){
 
-    $('.gallery__slider').slick({
-        dots: true,
-        arrows: false,
-        autoplay: true,
-        infinite: true,
-        autoplaySpeed: 2000,
-  
+    $('.header__burg').on('click', function(){
+      $('.header__contact').addClass('header__contact--active');
+      $('.header__burg').removeClass('header__burg--active');
+      $('.header__close').addClass('header__close--active');
     });
-
-    $('.reviews-slider').slick({
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        arrows: false,
-        dots: true,
-        responsive: [
-            {
-              breakpoint: 1176,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              }
-            },
-        ]
-
+    $('.header__close').on('click', function(){
+      $('.header__burg').addClass('header__burg--active');
+      $('.header__contact').removeClass('header__contact--active');
+      $('.header__close').removeClass('header__close--active');
     });
-    $('.menu__burger-btn').on('click', function(){
-      $('.menu__list').slideToggle();
-    });
+    
 
     new WOW().init();
 
