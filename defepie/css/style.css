@@ -243,12 +243,14 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     opacity: 7%;
+    filter: blur(2px);
     padding-left: 15px;
     text-align: left;
 }
 
 .boxes__inner-item{
-    background-color: rgba(14, 10, 75, .24);
+    background-image: url(../images/fon.png);
+    background-color: rgba(41, 39, 39, .9);
     border-radius: 20px;
     max-width: 1115px;
     padding: 35px 0 64px 40px;
@@ -260,7 +262,10 @@ a{
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: -27px;
+    margin-top: 5px;
+    position: relative;
+    z-index: 2;
+    
 
 }
 .boxes__title-block{
@@ -285,6 +290,7 @@ a{
     font-weight: 600;
     max-width: 100px;
 }
+
 .boxes__inner-supprice{
     text-align: left;
     font-size: 20px;
@@ -317,6 +323,52 @@ a{
 .boxes__inner-img{
     margin-right: -22px;
 }
+.boxes__inner-line{
+    background-color: #04010D;
+    width: 95%;
+    margin: 0 auto 0 0;
+    height: 40px;
+    border-radius: 15px;
+}
+.boxes__inner-line div{
+    background: linear-gradient(45deg, #36020C, #E72C50);
+    width: 56%;
+    border-radius: 15px;
+    height: 40px;
+    margin: 0 auto 0 0;
+    color: #89142E;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 39px;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 37px;
+    position: relative;
+}
+.boxes__inner-line .boxes__inner-line1{
+    width: 56%;
+
+}
+.boxes__inner-line .boxes__inner-line2{
+    width: 72%;
+
+}
+.boxes__inner-line .boxes__inner-line3{
+    width: 100%;
+
+}
+.boxes__inner-line div::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/Group\ 6673.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: -11px;
+    top: -9px;
+}
 
 
 .benefits{
@@ -336,8 +388,6 @@ a{
     line-height: 108px;
     font-weight: 900;
     color: #1A1725;
-    color: #fff;
-    opacity: 5%;
 }
 .benefits__title{
     font-size: 46px;
@@ -436,25 +486,31 @@ a{
     background-color: #fff;
     padding: 20px 52px 20px 80px;
     border: 3px solid #F22F54;
-    border-radius: 25px;
+    border-radius: 40px;
     position: relative;
 }
 .footer__btn button::before{
     content: "";
     position: absolute;
-    background-image: url(../images/Telegram.png);
-    width: 43px;
+    background-image: url(../images/Teleg.svg);
+    width: 40px;
     background-position: center;
     background-repeat: no-repeat;
-    height: 46px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    height: 40px;
+    background-color: #F22F54;
     left: 7px;
     top: 12px;
 }
 .footer__btn button:hover{
     background-color: #F22F54;
     color: #fff;
-
 }
+.footer__btn button:hover::before{
+    box-shadow: none;
+}
+
 
 .footer__copy{
     font-size: 20px;
@@ -474,9 +530,7 @@ a{
 
 }
 @media (max-width: 1135px){
-    .boxes__inner-line img{
-        width: 95%;
-    }
+    
     .boxes__inner-item{
         max-width: 95%;
     }
@@ -610,7 +664,10 @@ a{
 }
 @media (max-width: 730px){
     .boxes__title-bg{
-        font-size: 35px;
+        display: none;
+    }
+    .boxes__inner-item {
+        padding-top: 10px;
     }
     .boxes__title,
     .boxes__title-percent {
@@ -670,9 +727,7 @@ a{
     .boxes__title{
         margin-right: 0;
     }
-    .boxes__inner-line img {
-        min-height: 30px;
-    }
+   
     .boxes__inner-filled {
         flex-direction: column;
     }
@@ -684,6 +739,7 @@ a{
         text-align: right;
         margin-top: -50px;
     }
+    
     .benefits__title-bg {
         font-size: 75px;
     }
@@ -702,6 +758,16 @@ a{
     .header__close{
         z-index: 20;
     }
+    .boxes__inner-line,
+    .boxes__inner-line div
+    {
+        height: 30px;
+        line-height: 32px;
+    }
+    .boxes__inner-line div::after {
+        top: -13px;
+    }
+        
 }
 @media (max-width: 390px){
     .benefits__title-bg {
@@ -770,5 +836,33 @@ a{
     }
     .benefits__items {
         margin-left: -22px;
+    }
+}
+
+
+
+@media (min-width: 576px){
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px){
+    .container {
+        max-width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        max-width: 990px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1170px;
+    }
+}
+@media (min-width: 1600px){
+    .container {
+        max-width: 1520px;
     }
 }
