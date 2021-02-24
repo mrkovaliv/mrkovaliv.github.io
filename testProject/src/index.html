@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Project</title>
+</head>
+
+<body>
+    <section class="board hide">
+        <div class="container">
+            <div class="board__inner">
+                <div class="board-block to_do">
+                    <div class="board-block__title">To Do</div>
+                    <ul class="board-block__list"></ul>
+                    <div class="add__wrapper">
+                        <button class="board-block__add-card">Add a card</button>
+                    </div>
+                </div>
+                <div class="board-block in_progress">
+                    <div class="board-block__title">In Progress</div>
+                    <ul class="board-block__list">
+                    </ul>
+                    <div class="add__wrapper">
+                        <button class="board-block__add-card">Add a card</button>
+                    </div>
+                </div>
+                <div class="board-block testing">
+                    <div class="board-block__title">Testing</div>
+                    <ul class="board-block__list">
+
+                    </ul>
+                    <div class="add__wrapper">
+                        <button class="board-block__add-card">Add a card</button>
+                    </div>
+                </div>
+                <div class="board-block done">
+                    <div class="board-block__title">Done</div>
+                    <ul class="board-block__list">
+
+                    </ul>
+                    <div class="add__wrapper">
+                        <button class="board-block__add-card">Add a card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="registration">
+        <div class="admission__block">
+            <form class="admission__form">
+                <input class="admission__login" type="text" placeholder="Login" name="identifier">
+                <input class="admission__password" type="password" placeholder="Password" name="password">
+                <button class="admission__btn">Log in</button>
+            </form>
+            <div class="admission__btn-reg">
+                <span>or</span>
+                <button class="admission__reg">Log up</button>
+            </div>
+        </div>
+        <div class="registr__block hide">
+            <form class="registr__form">
+                <input class="registr__email" type="text" placeholder="Email" name="email">
+                <input class="registr__login" type="text" placeholder="Login" name="identifier">
+                <input class="registr__password" type="password" placeholder="Password" name="password">
+                <button class="registr__btn">Log up</button>
+            </form>
+            <div class="registr__btn-log">
+                <span>or</span>
+                <button class="registr__log">Log in</button>
+            </div>
+        </div>
+    </section>
+    <form class="modal-create hide">
+        <input class="modal-create__title" type="text" placeholder="Title" name="title">
+        <div class="modal-create__title-error hide">The title cannot be empty.</div>
+        <input class="modal-create__descr" type="text" placeholder="Description" name="description">
+        <div class="modal-create__btns">
+            <button class="modal-create__done">Create</button>
+            <button class="modal-create__close">Cancel</button>
+        </div>
+    </form>
+    <div class="overlay-modal hide"></div>
+    <div class="modal-error hide">
+        <p class="modal-error__message">Sorry, something went wrong, check your input data</p>
+        <button class="modal-error__close">Ok, close</button>
+    </div>
+</body>
+
+</html>

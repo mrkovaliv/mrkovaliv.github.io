@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height: 1;
+    background-color: #049143;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hide {
+    display: none !important;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.board {
+    padding: 50px 0;
+    min-width: 1200px;
+}
+
+.board__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.board-block {
+    padding: 20px 5px;
+    background-color: #ECEDED;
+    border-radius: 10px;
+    max-width: 280px;
+    min-width: 280px;
+    height: 100%;
+    box-shadow: 0 0 5px 0 #000;
+}
+
+.board-block__list {
+    min-height: 50px;
+}
+
+.board-block__title {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.board-block__card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.card-desciption {
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.card-btns {
+    margin-top: 10px;
+}
+
+.card-btns button {
+    cursor: pointer;
+
+}
+
+.card-btns img {
+    height: 20px;
+}
+
+.add__wrapper {
+    text-align: center;
+
+}
+
+.board-block__add-card:hover {
+    background-color: #4C8080;
+    color: #ECEDED;
+}
+
+.board-block__add-card {
+    border: 1px solid #000;
+    padding: 6px 30px;
+    border-radius: 10px;
+}
+
+.modal-create {
+    max-width: 300px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECEDED;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.admission__form,
+.registr__form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.admission__block,
+.registr__block {
+    max-width: 300px;
+    min-width: 300px;
+    margin: 50px auto;
+    background-color: #ECEDED;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px 3px #000;
+}
+
+.admission__login,
+.admission__password,
+.admission__btn,
+.registr__login,
+.registr__email,
+.registr__password,
+.modal-create__title,
+.modal-create__descr,
+.registr__btn {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
+
+.admission__btn,
+.registr__btn,
+.modal-create__done,
+.modal-create__close,
+.admission__reg,
+.registr__log {
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 7px;
+    background-color: #fff;
+
+}
+
+.board-block__add-card:hover,
+.admission__btn:hover,
+.registr__btn:hover,
+.admission__reg:hover,
+.registr__log:hover,
+.modal-error__close:hover {
+    background-color: #4C8080;
+    color: #ECEDED;
+}
+
+.registr__btn-log,
+.admission__btn-reg {
+    text-align: right;
+}
+
+.registr__btn-log span,
+.admission__btn-reg span {
+    margin-right: 5px;
+}
+
+.modal-create__done:hover {
+    background-color: green;
+    color: #ECEDED;
+}
+
+.modal-create__close:hover {
+    background-color: red;
+    color: #ECEDED;
+}
+
+.card-btns svg {
+    height: 20px;
+    width: 20px;
+
+}
+
+.card-btns button:hover {
+    background-color: grey;
+}
+
+.card-btns button {
+    cursor: pointer;
+    padding: 2px 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #000;
+    margin-right: 5px;
+}
+
+.modal-error {
+    background-color: #fff;
+    border: 2px solid red;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-weight: 700;
+    z-index: 3;
+}
+
+.modal-error__close {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.overlay-modal {
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+    background-color: rgba(1, 1, 1, 0.8);
+    z-index: 100;
+    overflow: auto;
+}
+
+.modal-create {
+    margin: auto;
+    margin-top: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -110px;
+    margin-left: -200px;
+    box-shadow: 0 0 15px 3px #000;
+    z-index: 200;
+}
+
+.modal-create__title-error {
+    line-height: 18px;
+    font-size: 14px;
+    padding: 0 0 6px 0;
+    text-align: center;
+    color: red;
+}
